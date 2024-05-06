@@ -39,40 +39,40 @@
         base_layer {
             label = "Base";
             bindings = <
-&kp Q        &kp W        &kp E         &kp R           &kp T           &kp C_VOL_DN   &kp C_VOL_UP   &kp Y             &kp U            &kp I         &kp O        &kp P
-&hm LGUI A   &hm LALT S   &hm LCTRL D   &hm LSHFT F     &kp G           &kp C_MUTE     &kp C_MUTE     &kp H             &hm RSHFT J      &hm RCTRL K   &hm RALT L   &hm RGUI SEMI
-&kp Z        &kp X        &kp C         &kp V           &kp B           &kp C_PREV     &kp C_NEXT     &kp N             &kp M            &kp COMMA     &kp DOT      &kp FSLH
-                          &none         &lt NAV_L TAB   &lt NAV_L RET   &kp C_PP                      &lt NUM_L SPACE   &lt SYM_L BKSP   &none
+&kp Q         &kp W         &kp E          &kp R            &kp T            &kp C_VOL_DN    &kp C_VOL_UP    &kp Y              &kp U             &kp I          &kp O         &kp P
+&hm LGUI A    &hm LALT S    &hm LCTRL D    &hm LSHFT F      &kp G            &none           &kp C_MUTE      &kp H              &hm RSHFT J       &hm RCTRL K    &hm RALT L    &hm RGUI SEMI
+&kp Z         &kp X         &kp C          &kp V            &kp B            &kp C_PREV      &kp C_NEXT      &kp N              &kp M             &kp COMMA      &kp DOT       &kp FSLH
+                            &none          &lt NAV_L TAB    &lt NAV_L RET    &kp C_PP                        &lt NUM_L SPACE    &lt SYM_L BKSP    &none
             >;
         };
 
         nav_layer {
             label = "Nav";
             bindings = <
-&bt BT_CLR     &trans         &trans         &trans         &trans         &kp C_BRI_DN   &kp C_BRI_UP   &trans    &trans     &trans      &trans      &trans
-&trans         &trans         &trans         &trans         &trans         &trans         &trans         &trans    &kp LARW   &kp DARW    &kp UARW    &kp RARW
-&bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &trans         &trans         &trans    &kp HOME   &kp PG_DN   &kp PG_UP   &kp END
-                              &trans         &trans         &trans         &trans                        &kp ESC   &kp DEL    &trans
+&bt BT_CLR      &trans          &kp C_BRI_DN    &kp C_BRI_UP    &trans          &trans    &trans    &kp C_VOL_UP    &kp C_PREV    &kp C_PP     &kp C_NEXT    &trans
+&trans          &trans          &trans          &trans          &trans          &trans    &trans    &kp C_VOL_DN    &kp LARW      &kp DARW     &kp UARW      &kp RARW
+&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &trans    &trans    &kp C_MUTE      &kp HOME      &kp PG_DN    &kp PG_UP     &kp END
+                                &trans          &trans          &trans          &trans              &kp ESC         &kp DEL       &trans
             >;
         };
 
         num_layer {
             label = "Num";
             bindings = <
-&kp LBKT    &kp N7   &kp N8   &kp N9   &kp RBKT    &trans   &trans   &trans   &trans   &trans   &trans   &trans
-&kp MINUS   &kp N4   &kp N5   &kp N6   &kp EQUAL   &trans   &trans   &trans   &trans   &trans   &trans   &trans
-&kp GRAVE   &kp N1   &kp N2   &kp N3   &kp BSLH    &trans   &trans   &trans   &trans   &trans   &trans   &trans
-                     &trans   &kp N0   &kp SQT     &trans            &trans   &trans   &trans
+&kp LBKT     &kp N7    &kp N8    &kp N9    &kp RBKT     &trans    &trans    &trans    &trans    &trans    &sys_reset    &bootloader
+&kp MINUS    &kp N4    &kp N5    &kp N6    &kp EQUAL    &trans    &trans    &trans    &trans    &trans    &trans        &trans
+&kp GRAVE    &kp N1    &kp N2    &kp N3    &kp BSLH     &trans    &trans    &trans    &trans    &trans    &trans        &trans
+                       &trans    &kp N0    &kp SQT      &trans              &trans    &trans    &trans
             >;
         };
 
         sym_layer {
             label = "Sym";
             bindings = <
-&kp LS(LBKT)    &kp LS(N7)   &kp LS(N8)   &kp LS(N9)   &kp LS(RBKT)    &trans   &trans   &trans   &trans   &trans   &sys_reset   &bootloader
-&kp LS(MINUS)   &kp LS(N4)   &kp LS(N5)   &kp LS(N6)   &kp LS(EQUAL)   &trans   &trans   &trans   &trans   &trans   &trans       &trans
-&kp LS(GRAVE)   &kp LS(N1)   &kp LS(N2)   &kp LS(N3)   &kp LS(BSLH)    &trans   &trans   &trans   &trans   &trans   &trans       &trans
-                             &trans       &kp LS(N0)   &kp LS(SQT)     &trans            &trans   &trans   &trans
+&kp LS(LBKT)     &kp LS(N7)    &kp LS(N8)    &kp LS(N9)    &kp LS(RBKT)     &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&kp LS(MINUS)    &kp LS(N4)    &kp LS(N5)    &kp LS(N6)    &kp LS(EQUAL)    &trans    &trans    &trans    &trans    &trans    &trans    &trans
+&kp LS(GRAVE)    &kp LS(N1)    &kp LS(N2)    &kp LS(N3)    &kp LS(BSLH)     &trans    &trans    &trans    &trans    &trans    &trans    &trans
+                               &trans        &kp LS(N0)    &kp LS(SQT)      &trans              &trans    &trans    &trans
             >;
         };
 
