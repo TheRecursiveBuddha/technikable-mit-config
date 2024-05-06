@@ -40,7 +40,7 @@
             label = "Base";
             bindings = <
 &kp Q         &kp W         &kp E          &kp R            &kp T            &kp C_VOL_DN    &kp C_VOL_UP    &kp Y              &kp U             &kp I          &kp O         &kp P
-&hm LGUI A    &hm LALT S    &hm LCTRL D    &hm LSHFT F      &kp G            &none           &kp C_MUTE      &kp H              &hm RSHFT J       &hm RCTRL K    &hm RALT L    &hm RGUI SEMI
+&hm LGUI A    &hm LALT S    &hm LCTRL D    &hm LSHFT F      &kp G            &kp LS(LALT)    &kp C_MUTE      &kp H              &hm RSHFT J       &hm RCTRL K    &hm RALT L    &hm RGUI SEMI
 &kp Z         &kp X         &kp C          &kp V            &kp B            &kp C_PREV      &kp C_NEXT      &kp N              &kp M             &kp COMMA      &kp DOT       &kp FSLH
                             &none          &lt NAV_L TAB    &lt NAV_L RET    &kp C_PP                        &lt NUM_L SPACE    &lt SYM_L BKSP    &none
             >;
