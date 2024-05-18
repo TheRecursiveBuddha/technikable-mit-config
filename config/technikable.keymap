@@ -6,8 +6,8 @@
 
 /*
  * TODO:
- *   (C_BRI_DN)
- *   (C_BRI_UP)
+ *   LS(LALT(C_BRI_DN))
+ *   LS(LALT(C_BRI_UP))
  */
 
 #include <behaviors.dtsi>
@@ -55,10 +55,10 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&none           &none                     &none                     &sys_reset      &bootloader     &trans    &trans    &kp C_VOL_UP    &kp C_PREV    &kp C_PP     &kp C_NEXT    &none
-&kp C_BRI_DN    &kp LS(LALT)              &kp LS(LALT)              &kp C_BRI_UP    &bt BT_CLR      &trans    &trans    &kp C_VOL_DN    &kp LARW      &kp DARW     &kp UARW      &kp RARW
-&bt BT_SEL 0    &bt BT_SEL 1              &bt BT_SEL 2              &bt BT_SEL 3    &bt BT_SEL 4    &trans    &trans    &kp C_MUTE      &kp HOME      &kp PG_DN    &kp PG_UP     &kp END
-                                          &trans                    &trans          &trans          &trans              &kp BKSP        &kp DEL       &none
+&kp LS(LALT)    &kp C_VOL_DN    &kp C_VOL_UP    &sys_reset      &bootloader     &trans    &trans    &kp C_VOL_UP    &kp C_PREV    &kp C_PP     &kp C_NEXT    &none
+&kp LS(LALT)    &kp C_BRI_DN    &kp C_BRI_UP    &none           &bt BT_CLR      &trans    &trans    &kp C_VOL_DN    &kp LARW      &kp DARW     &kp UARW      &kp RARW
+&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &trans    &trans    &kp C_MUTE      &kp HOME      &kp PG_DN    &kp PG_UP     &kp END
+                                &trans          &trans          &trans          &trans              &kp BKSP        &kp DEL       &none
             >;
         };
 
