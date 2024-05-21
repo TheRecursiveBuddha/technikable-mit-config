@@ -49,10 +49,10 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&none           &kp C_VOL_DN    &kp C_VOL_UP    &bt BT_CLR         &bootloader     &trans    &trans    &kp C_VOL_UP    &kp C_PREV    &kp C_PP     &kp C_NEXT    &kp K_APP
-&kp LS(LALT)    &kp C_BRI_DN    &kp C_BRI_UP    &kp C_AC_SEARCH    &sys_reset      &trans    &trans    &kp C_VOL_DN    &kp LARW      &kp DARW     &kp UARW      &kp RARW
-&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3       &bt BT_SEL 4    &trans    &trans    &kp C_MUTE      &kp HOME      &kp PG_DN    &kp PG_UP     &kp END
-                                &none           &none              &trans          &trans              &kp TAB         &kp DEL       &none
+&none           &none           &none           &bt BT_CLR      &bootloader     &trans    &trans    &kp C_VOL_UP    &kp C_PREV    &kp C_PP     &kp C_NEXT    &kp C_AC_SEARCH
+&kp LS(LALT)    &kp C_BRI_DN    &kp C_BRI_UP    &none           &sys_reset      &trans    &trans    &kp C_VOL_DN    &kp LARW      &kp DARW     &kp UARW      &kp RARW
+&bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &trans    &trans    &kp C_MUTE      &kp HOME      &kp PG_DN    &kp PG_UP     &kp END
+                                &none           &none           &trans          &trans              &kp TAB         &kp DEL       &none
             >;
         };
 
